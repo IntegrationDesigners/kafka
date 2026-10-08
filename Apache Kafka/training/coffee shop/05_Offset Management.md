@@ -38,3 +38,6 @@ We will be sending a series of orders to investigate how the tasks are devided
 2. Reset offest: podman exec -it kafka kafka-consumer-groups --bootstrap-server localhost:29092 --group barista-team --topic coffee-orders --reset-offsets --shift-by -5 --execute
 3. Restart your barista team
 	podman exec -it kafka kafka-console-consumer --bootstrap-server localhost:29092 --topic coffee-orders --group barista-team
+
+
+Note: sometimes the issue occurs that the reset is not possible due to open connections, even if you have closed all your terminals. Check for running PID's that still need to be closed.
