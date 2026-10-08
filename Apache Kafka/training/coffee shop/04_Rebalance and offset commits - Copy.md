@@ -26,15 +26,16 @@ We are going to add a property defining a fixed group name (barista-team)
 1. Open a third terminal (producer) and send in a small batch of orders: podman exec -it kafka kafka-console-producer --bootstrap-server localhost:29092 --topic coffee-orders --property "parse.key=true" --property "key.separator=:"
 
 kassa-1:{"orderId": 701, "customer": "Sophie", "coffee": "Caramel Macchiato"}
->kassa-2:{"orderId": 702, "customer": "Daan", "coffee": "Americano"}
->kassa-3:{"orderId": 703, "customer": "Lotte", "coffee": "Flat White"}
->kassa-1:{"orderId": 704, "customer": "Finn", "coffee": "Espresso"}
->kassa-2:{"orderId": 705, "customer": "Floor", "coffee": "Cappuccino"}
->kassa-3:{"orderId": 706, "customer": "Milan", "coffee": "Latte"}
->kassa-1:{"orderId": 707, "customer": "Tessa", "coffee": "Cortado"}
->kassa-2:{"orderId": 708, "customer": "Jasper", "coffee": "Mocha"}
->kassa-3:{"orderId": 709, "customer": "Evi", "coffee": "Ristretto"}
->kassa-1:{"orderId": 710, "customer": "Stijn", "coffee": "Cold Brew"}
+kassa-2:{"orderId": 702, "customer": "Daan", "coffee": "Americano"}
+kassa-3:{"orderId": 703, "customer": "Lotte", "coffee": "Flat White"}
+kassa-1:{"orderId": 704, "customer": "Finn", "coffee": "Espresso"}
+kassa-2:{"orderId": 705, "customer": "Floor", "coffee": "Cappuccino"}
+kassa-3:{"orderId": 706, "customer": "Milan", "coffee": "Latte"}
+kassa-1:{"orderId": 707, "customer": "Tessa", "coffee": "Cortado"}
+kassa-2:{"orderId": 708, "customer": "Jasper", "coffee": "Mocha"}
+kassa-3:{"orderId": 709, "customer": "Evi", "coffee": "Ristretto"}
+kassa-1:{"orderId": 710, "customer": "Stijn", "coffee": "Cold Brew"}
+
 ## Step 3: Simulate an Outage (Crash)
 We will be sending a series of orders to investigate how the tasks are devided
 
@@ -47,15 +48,15 @@ We will be sending a series of orders to investigate how the tasks are devided
 Send a few new orders via your producer terminal while Barista 2 is offline:
 
 kassa-1:{"orderId": 801, "customer": "Sophie", "coffee": "Caramel Macchiato"}
->kassa-2:{"orderId": 802, "customer": "Daan", "coffee": "Americano"}
->kassa-3:{"orderId": 803, "customer": "Lotte", "coffee": "Flat White"}
->kassa-1:{"orderId": 804, "customer": "Finn", "coffee": "Espresso"}
->kassa-2:{"orderId": 805, "customer": "Floor", "coffee": "Cappuccino"}
->kassa-3:{"orderId": 806, "customer": "Milan", "coffee": "Latte"}
->kassa-1:{"orderId": 807, "customer": "Tessa", "coffee": "Cortado"}
->kassa-2:{"orderId": 808, "customer": "Jasper", "coffee": "Mocha"}
->kassa-3:{"orderId": 809, "customer": "Evi", "coffee": "Ristretto"}
->kassa-1:{"orderId": 810, "customer": "Stijn", "coffee": "Cold Brew"}
+kassa-2:{"orderId": 802, "customer": "Daan", "coffee": "Americano"}
+kassa-3:{"orderId": 803, "customer": "Lotte", "coffee": "Flat White"}
+kassa-1:{"orderId": 804, "customer": "Finn", "coffee": "Espresso"}
+kassa-2:{"orderId": 805, "customer": "Floor", "coffee": "Cappuccino"}
+kassa-3:{"orderId": 806, "customer": "Milan", "coffee": "Latte"}
+kassa-1:{"orderId": 807, "customer": "Tessa", "coffee": "Cortado"}
+kassa-2:{"orderId": 808, "customer": "Jasper", "coffee": "Mocha"}
+kassa-3:{"orderId": 809, "customer": "Evi", "coffee": "Ristretto"}
+kassa-1:{"orderId": 810, "customer": "Stijn", "coffee": "Cold Brew"}
 
 ## Step 5: Restore the Outage (Barista 2 Returns)
 
@@ -63,15 +64,15 @@ kassa-1:{"orderId": 801, "customer": "Sophie", "coffee": "Caramel Macchiato"}
 
 produce:
 kassa-1:{"orderId": 1001, "customer": "Lars", "coffee": "Cappuccino"}
->kassa-2:{"orderId": 1002, "customer": "Yara", "coffee": "Latte"}
->kassa-3:{"orderId": 1003, "customer": "Ruben", "coffee": "Espresso"}
->kassa-1:{"orderId": 1004, "customer": "Femke", "coffee": "Flat White"}
->kassa-2:{"orderId": 1005, "customer": "Sven", "coffee": "Americano"}
->kassa-3:{"orderId": 1006, "customer": "Lieke", "coffee": "Cortado"}
->kassa-1:{"orderId": 1007, "customer": "Bram", "coffee": "Mocha"}
->kassa-2:{"orderId": 1008, "customer": "Hanna", "coffee": "Cold Brew"}
->kassa-3:{"orderId": 1009, "customer": "Wout", "coffee": "Ristretto"}
->kassa-1:{"orderId": 1010, "customer": "Anouk", "coffee": "Macchiato"}
+kassa-2:{"orderId": 1002, "customer": "Yara", "coffee": "Latte"}
+kassa-3:{"orderId": 1003, "customer": "Ruben", "coffee": "Espresso"}
+kassa-1:{"orderId": 1004, "customer": "Femke", "coffee": "Flat White"}
+kassa-2:{"orderId": 1005, "customer": "Sven", "coffee": "Americano"}
+kassa-3:{"orderId": 1006, "customer": "Lieke", "coffee": "Cortado"}
+kassa-1:{"orderId": 1007, "customer": "Bram", "coffee": "Mocha"}
+kassa-2:{"orderId": 1008, "customer": "Hanna", "coffee": "Cold Brew"}
+kassa-3:{"orderId": 1009, "customer": "Wout", "coffee": "Ristretto"}
+kassa-1:{"orderId": 1010, "customer": "Anouk", "coffee": "Macchiato"}
 
 ## Step 6: Verification in Kafdrop
 1. Open Kafdrop (http://localhost:9000).
