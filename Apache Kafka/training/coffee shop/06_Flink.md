@@ -18,9 +18,6 @@ Make sure your environment is running (podman compose up -d), including the new 
 1. Open a terminal and enter the running Flink JobManager container to start the Flink SQL CLI:
 	podman exec -it jobmanager ./bin/sql-client.sh
 2. You will be greeted by the Flink SQL interactive command line interface.
-3. Install required libraries:
-podman exec -it jobmanager wget -P /opt/flink/lib/ https://repo1.maven.org/maven2/org/apache/flink/flink-sql-connector-kafka/3.1.0-1.18/flink-sql-connector-kafka-3.1.0-1.18.jar
-podman exec -it taskmanager wget -P /opt/flink/lib/ https://repo1.maven.org/maven2/org/apache/flink/flink-sql-connector-kafka/3.1.0-1.18/flink-sql-connector-kafka-3.1.0-1.18.jar## Step 2: Create the Kafka Source Table in Flink
 
 Because Flink needs to know the structure of your JSON coffee orders, we define a dynamic Table mapped to your existing Kafka topic coffee-orders.
 
