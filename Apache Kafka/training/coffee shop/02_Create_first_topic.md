@@ -44,12 +44,9 @@ Before placing any orders, we will set up a "barista" that listens to our new to
 3. You will now see an empty prompt (>). Type an order per line below and press Enter after each line:
 4. Add next order:
 
-kassa-1:{"orderId": 101, "customer": "Alice", "coffee": "Cappuccino"}
-
-\>kassa-1:{"orderId": 102, "customer": "Bob", "coffee": "Espresso"}
-
-\>kassa-1:{"orderId": 103, "customer": "Charlie", "coffee": "Latte Macchiato"}
-
+kassa-1:{"orderId": 101, "customer": "Alice", "coffee": "Cappuccino"}\n
+\>kassa-1:{"orderId": 102, "customer": "Bob", "coffee": "Espresso"}\n
+\>kassa-1:{"orderId": 103, "customer": "Charlie", "coffee": "Latte Macchiato"}\n
 \>kassa-1:{"orderId": 104, "customer": "Diana", "coffee": "Americano"}
 	
 ## Step 4: Check the results in the UI
