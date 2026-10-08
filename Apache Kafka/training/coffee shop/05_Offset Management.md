@@ -17,11 +17,11 @@ We are going to add a property defining a fixed group name (barista-team)
 1. Open Terminal 1 and start Producer: podman exec -it kafka kafka-console-producer --bootstrap-server localhost:29092 --topic coffee-orders --property "parse.key=true" --property "key.separator=:"
 
 kassa-1:{"orderId": 1011, "customer": "Liam", "coffee": "Cappuccino"}
->kassa-2:{"orderId": 1012, "customer": "Olivia", "coffee": "Latte"}
->kassa-3:{"orderId": 1013, "customer": "Noah", "coffee": "Espresso"}
->kassa-1:{"orderId": 1014, "customer": "Emma", "coffee": "Flat White"}
->kassa-2:{"orderId": 1015, "customer": "Lucas", "coffee": "Americano"}
->kassa-3:{"orderId": 1016, "customer": "Mila", "coffee": "Cortado"}
+kassa-2:{"orderId": 1012, "customer": "Olivia", "coffee": "Latte"}
+kassa-3:{"orderId": 1013, "customer": "Noah", "coffee": "Espresso"}
+kassa-1:{"orderId": 1014, "customer": "Emma", "coffee": "Flat White"}
+kassa-2:{"orderId": 1015, "customer": "Lucas", "coffee": "Americano"}
+kassa-3:{"orderId": 1016, "customer": "Mila", "coffee": "Cortado"}
 
 ---
 
