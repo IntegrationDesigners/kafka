@@ -36,7 +36,7 @@ We will be sending a series of orders to investigate how the tasks are devided
 
 1. Open a new producer terminal
 2. podman exec -it kafka kafka-console-producer --bootstrap-server localhost:29092 --topic coffee-orders --property "parse.key=true" --property "key.separator=:"
-3. Send 6 different orders:
+3. Send next orders:
 
 kassa-1:{"orderId": 401, "customer": "Alice", "coffee": "Cappuccino"}
 >kassa-2:{"orderId": 402, "customer": "Bob", "coffee": "Espresso"}
