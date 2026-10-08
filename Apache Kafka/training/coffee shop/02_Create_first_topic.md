@@ -45,8 +45,11 @@ Before placing any orders, we will set up a "barista" that listens to our new to
 4. Add next order:
 
 kassa-1:{"orderId": 101, "customer": "Alice", "coffee": "Cappuccino"}
+
 \>kassa-1:{"orderId": 102, "customer": "Bob", "coffee": "Espresso"}
+
 \>kassa-1:{"orderId": 103, "customer": "Charlie", "coffee": "Latte Macchiato"}
+
 \>kassa-1:{"orderId": 104, "customer": "Diana", "coffee": "Americano"}
 	
 ## Step 4: Check the results in the UI
