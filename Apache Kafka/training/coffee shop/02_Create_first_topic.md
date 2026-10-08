@@ -40,6 +40,7 @@ Before placing any orders, we will set up a "barista" that listens to our new to
 
 1. Open a **new PowerShell terminal** (alongside your running environment).
 2. Run the following command to start the console producer:
+	podman exec -it kafka kafka-console-producer --bootstrap-server localhost:29092 --topic coffee-orders --property "parse.key=true" --property "key.separator=:"
 3. You will now see an empty prompt (>). Type an order per line below and press Enter after each line:
 4. Add next order:
 
