@@ -39,35 +39,35 @@ We will be sending a series of orders to investigate how the tasks are devided
 3. Send next orders:
 
 kassa-1:{"orderId": 401, "customer": "Alice", "coffee": "Cappuccino"}
->kassa-2:{"orderId": 402, "customer": "Bob", "coffee": "Espresso"}
->kassa-3:{"orderId": 403, "customer": "Charlie", "coffee": "Latte"}
->kassa-1:{"orderId": 404, "customer": "Diana", "coffee": "Americano"}
->kassa-2:{"orderId": 405, "customer": "Emma", "coffee": "Flat White"}
->kassa-3:{"orderId": 406, "customer": "Frank", "coffee": "Mocha"}
->kassa-1:{"orderId": 407, "customer": "Grace", "coffee": "Macchiato"}
->kassa-2:{"orderId": 408, "customer": "Hannah", "coffee": "Ristretto"}
->kassa-3:{"orderId": 409, "customer": "Ian", "coffee": "Cortado"}
->kassa-1:{"orderId": 410, "customer": "Julia", "coffee": "Iced Coffee"}
->kassa-2:{"orderId": 411, "customer": "Kevin", "coffee": "Cappuccino"}
->kassa-3:{"orderId": 412, "customer": "Laura", "coffee": "Espresso"}
->kassa-1:{"orderId": 413, "customer": "Mark", "coffee": "Latte"}
->kassa-2:{"orderId": 414, "customer": "Nina", "coffee": "Americano"}
->kassa-3:{"orderId": 415, "customer": "Oscar", "coffee": "Flat White"}
->kassa-1:{"orderId": 416, "customer": "Paula", "coffee": "Mocha"}
->kassa-2:{"orderId": 417, "customer": "Quinten", "coffee": "Macchiato"}
->kassa-3:{"orderId": 418, "customer": "Roos", "coffee": "Ristretto"}
->kassa-1:{"orderId": 419, "customer": "Sven", "coffee": "Cortado"}
->kassa-2:{"orderId": 420, "customer": "Tine", "coffee": "Iced Coffee"}
->kassa-3:{"orderId": 421, "customer": "Uwe", "coffee": "Cappuccino"}
->kassa-1:{"orderId": 422, "customer": "Vera", "coffee": "Espresso"}
->kassa-2:{"orderId": 423, "customer": "Wout", "coffee": "Latte"}
->kassa-3:{"orderId": 424, "customer": "Xander", "coffee": "Americano"}
->kassa-1:{"orderId": 425, "customer": "Yara", "coffee": "Flat White"}
->kassa-2:{"orderId": 426, "customer": "Zoe", "coffee": "Mocha"}
->kassa-3:{"orderId": 427, "customer": "Arne", "coffee": "Macchiato"}
->kassa-1:{"orderId": 428, "customer": "Bram", "coffee": "Ristretto"}
->kassa-2:{"orderId": 429, "customer": "Ciska", "coffee": "Cortado"}
->kassa-3:{"orderId": 430, "customer": "Dries", "coffee": "Iced Coffee"}
+kassa-2:{"orderId": 402, "customer": "Bob", "coffee": "Espresso"}
+kassa-3:{"orderId": 403, "customer": "Charlie", "coffee": "Latte"}
+kassa-1:{"orderId": 404, "customer": "Diana", "coffee": "Americano"}
+kassa-2:{"orderId": 405, "customer": "Emma", "coffee": "Flat White"}
+kassa-3:{"orderId": 406, "customer": "Frank", "coffee": "Mocha"}
+kassa-1:{"orderId": 407, "customer": "Grace", "coffee": "Macchiato"}
+kassa-2:{"orderId": 408, "customer": "Hannah", "coffee": "Ristretto"}
+kassa-3:{"orderId": 409, "customer": "Ian", "coffee": "Cortado"}
+kassa-1:{"orderId": 410, "customer": "Julia", "coffee": "Iced Coffee"}
+kassa-2:{"orderId": 411, "customer": "Kevin", "coffee": "Cappuccino"}
+kassa-3:{"orderId": 412, "customer": "Laura", "coffee": "Espresso"}
+kassa-1:{"orderId": 413, "customer": "Mark", "coffee": "Latte"}
+kassa-2:{"orderId": 414, "customer": "Nina", "coffee": "Americano"}
+kassa-3:{"orderId": 415, "customer": "Oscar", "coffee": "Flat White"}
+kassa-1:{"orderId": 416, "customer": "Paula", "coffee": "Mocha"}
+kassa-2:{"orderId": 417, "customer": "Quinten", "coffee": "Macchiato"}
+kassa-3:{"orderId": 418, "customer": "Roos", "coffee": "Ristretto"}
+kassa-1:{"orderId": 419, "customer": "Sven", "coffee": "Cortado"}
+kassa-2:{"orderId": 420, "customer": "Tine", "coffee": "Iced Coffee"}
+kassa-3:{"orderId": 421, "customer": "Uwe", "coffee": "Cappuccino"}
+kassa-1:{"orderId": 422, "customer": "Vera", "coffee": "Espresso"}
+kassa-2:{"orderId": 423, "customer": "Wout", "coffee": "Latte"}
+kassa-3:{"orderId": 424, "customer": "Xander", "coffee": "Americano"}
+kassa-1:{"orderId": 425, "customer": "Yara", "coffee": "Flat White"}
+kassa-2:{"orderId": 426, "customer": "Zoe", "coffee": "Mocha"}
+kassa-3:{"orderId": 427, "customer": "Arne", "coffee": "Macchiato"}
+kassa-1:{"orderId": 428, "customer": "Bram", "coffee": "Ristretto"}
+kassa-2:{"orderId": 429, "customer": "Ciska", "coffee": "Cortado"}
+kassa-3:{"orderId": 430, "customer": "Dries", "coffee": "Iced Coffee"}
 
 
 	
