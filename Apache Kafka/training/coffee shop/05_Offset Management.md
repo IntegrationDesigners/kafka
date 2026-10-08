@@ -37,4 +37,4 @@ We will be sending a series of orders to investigate how the tasks are devided
 1. Stop your barista-team (all consuming terminals must be closed)
 2. Reset offest: podman exec -it kafka kafka-consumer-groups --bootstrap-server localhost:29092 --group barista-team --topic coffee-orders --reset-offsets --shift-by -5 --execute
 3. Restart your barista team
-	podman exec -it kafka kafka-console-consumer --bootstrap-server localhost:29092 --topic coffee-orders.v1 --group barista-team
+	podman exec -it kafka kafka-console-consumer --bootstrap-server localhost:29092 --topic coffee-orders --group barista-team
